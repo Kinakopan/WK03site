@@ -18,41 +18,44 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <!-- <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/4d5e3f95b7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="page home">
-
+<body class="page ho me">
     <header class="page__header">
-        <a href="">
-            <img src="" alt="">
+        <a class="header__title" href="/">
+            <img class="header__title__img" src="./img/metrolics.png" alt="Metrolics">
         </a>
-        <div class="hamburger sp">
+        <div class="header__hamburger sp">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li class="menu-item">
-                    <a href="#home"></a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__list__item">
+                    <a class="nav__list__item__link" href="/"></a>
                     <span>Home</span>
                 </li>
-                <li class="menu-item">
-                    <a href="#pages"></a>
+                <li class="nav__list__item">
+                    <a class="nav__list__item__link" href="/pages"></a>
                     <span>Pages</span>
                 </li>
-                <li class="menu-item">
-                    <a href="blog"></a>
+                <li class="nav__list__item">
+                    <a class="nav__list__item__link" href="/blog"></a>
                     <span>Blog</span>
                 </li>
-                <li class="menu-item">
-                    <a href="#portfolio"></a>
+                <li class="nav__list__item">
+                    <a class="nav__list__item__link" href="/potfolio"></a>
                     <span>Portfolio</span>
                 </li>
-                <li class="menu-item">
-                    <a href="#contact"></a>
+                <li class="nav__list__item">
+                    <a class="nav__list__item__link" href="/contact"></a>
                     <span>Contact</span>
                 </li>
             </ul>
@@ -60,61 +63,65 @@
     </header><!-- header end here -->
 
     <main class="page__main">
-        <section class="page__main__section carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
+        <section class="main__section main__mv" aria-label="Gallery">
+            <ol class="mv__carousel">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    <div class="carousel__slide__snapper">
+                        <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                        <a href="#carousel__slide4" class="carousel__slide__snapper__prev"></a>
+                        <a href="#carousel__slide2" class="carousel__slide__snapper__next"></a>
                     </div>
                 </li>
                 <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    <div class="carousel__slide__snapper"></div>
+                    <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                    <a href="#carousel__slide1" class="carousel__slide__snapper__prev"></a>
+                    <a href="#carousel__slide3" class="carousel__slide__snapper__next"></a>
                 </li>
                 <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                    <div class="carousel__slide__snapper"></div>
+                    <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                    <a href="#carousel__slide2" class="carousel__slide__snapper__prev"></a>
+                    <a href="#carousel__slide4" class="carousel__slide__snapper__next"></a>
                 </li>
             </ol>
-            <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                </ol>
-            </aside>
         </section><!-- Main Visual end here -->
 
-        <section class="page__main__section">
-            <div class="">
-                <h2>
-                    Hey guys! This is the Metrolics theme.<br>
-                    It sports a responsive layout with a mobile layout.
-                </h2>
-                <h3>
-                    Things That We Do
-                </h3>
-                <ul>
-                    <li>
-                        <span class=""></span>
-                        <h3 class=""></h3>
-                        <pc class=""></pc>
-                    </li>
-                </ul>
+        <section class="main__section main__about">
+            <h2 class="about__message">
+                Hey guys! This is the <strong>Metrolics</strong> theme.<br>
+                It sports a responsive layout with a mobile layout.
+            </h2>
+            <h3 class="about__heading">
+                Things That We Do
+            </h3>
+            <p class="about__subHeading">
+                Ask us what we can do for you
+            </p>
+            <ul class="about__list displayFlex">
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-solutions">Web Solutions</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+                </li>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-photo">Photography</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+                </li>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-dev">Web Development</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+                </li>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-design">Web Design</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+                </li>
+            </ul>
             </div>
-        </section>
+        </section><!-- header end here -->
 
         <section class="page__main__section">
             <div class="">
