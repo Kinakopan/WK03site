@@ -421,24 +421,24 @@ ol, li {
 
 
 
-/* main__about */
+/* main__section-intro */
 
-.about__message strong {
+.intro__message strong {
   font-weight: 100;
   color: cornflowerblue;
 }
 
-.about__list__item {
+.service__list__item {
   display: inline-block;
 }
 
-.about__list__item__heading {
+.service__list__item__heading {
   font-weight: bold;
   position: relative;
   padding-top: 6rem;
 }
 
-.about__list__item__heading::before {
+.service__list__item__heading::before {
   position: absolute;
   top: 0;
   left: 50%;
@@ -451,26 +451,26 @@ ol, li {
   background-position: center;
 }
 
-.about__list__item__heading-solutions::before {
+.service__list__item__heading-solutions::before {
   border: 3px solid yellow;
   color: yellow;
   background-image: url("../img/icons/lightbulb.png");
 }
 
-.about__list__item__heading-photo::before {
+.service__list__item__heading-photo::before {
   border: 3px solid green;
   color: green;
   background-image: url("../img/icons/picture.png");
 }
 
 
-.about__list__item__heading-dev::before {
+.service__list__item__heading-dev::before {
   border: 3px solid pink;
   color: pink;
   background-image: url("../img/icons/gear.png");
 }
 
-.about__list__item__heading-design::before {
+.service__list__item__heading-design::before {
   border: 3px solid blue;
   color: blue;
   background-image: url("../img/icons/pen.png");
