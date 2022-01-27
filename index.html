@@ -30,7 +30,7 @@
         <a class="header__title" href="/">
             <img class="header__title__img" src="./img/metrolics.png" alt="Metrolics">
         </a>
-        <div class="header__hamburger sp">
+        <div class="header__hamburger spOnly">
             <span></span>
             <span></span>
             <span></span>
@@ -39,35 +39,48 @@
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__list__item">
-                    <a class="nav__list__item__link" href="/"></a>
-                    <span>Home</span>
+                    <a class="nav__list__item__link" href="/">
+                      <!-- icon with css -->
+                      Home
+                    </a>
                 </li>
                 <li class="nav__list__item">
-                    <a class="nav__list__item__link" href="/pages"></a>
-                    <span>Pages</span>
+                    <a class="nav__list__item__link" href="/pages">
+                      <!-- icon with css -->
+                      Pages
+                    </a>
                 </li>
                 <li class="nav__list__item">
-                    <a class="nav__list__item__link" href="/blog"></a>
-                    <span>Blog</span>
+                    <a class="nav__list__item__link" href="/blog">
+                    <!-- icon with css -->
+                      Blog
+                    </a>
                 </li>
                 <li class="nav__list__item">
-                    <a class="nav__list__item__link" href="/potfolio"></a>
-                    <span>Portfolio</span>
+                    <a class="nav__list__item__link" href="/potfolio">
+                    <!-- icon with css -->
+                      Portfolio
+                    </a>
                 </li>
                 <li class="nav__list__item">
-                    <a class="nav__list__item__link" href="/contact"></a>
-                    <span>Contact</span>
+                    <a class="nav__list__item__link" href="/contact">
+                    <!-- icon with css -->
+                      Contact
+                    </a>
                 </li>
             </ul>
         </nav>
     </header><!-- page__header end here -->
 
     <main class="page__main">
-        <section class="main__section main__section-mv" aria-label="Gallery">
+        <section class="main__section main__section-mv pcOnly" aria-label="Gallery">
             <ol class="mv__carousel">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide">
                     <div class="carousel__slide__snapper">
                         <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
+                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
+                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
                         <a href="#carousel__slide4" class="carousel__slide__snapper__prev"></a>
                         <a href="#carousel__slide2" class="carousel__slide__snapper__next"></a>
                     </div>
@@ -75,19 +88,25 @@
                 <li id="carousel__slide2" tabindex="0" class="carousel__slide">
                     <div class="carousel__slide__snapper"></div>
                     <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
                     <a href="#carousel__slide1" class="carousel__slide__snapper__prev"></a>
                     <a href="#carousel__slide3" class="carousel__slide__snapper__next"></a>
                 </li>
                 <li id="carousel__slide3" tabindex="0" class="carousel__slide">
                     <div class="carousel__slide__snapper"></div>
                     <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
+                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
                     <a href="#carousel__slide2" class="carousel__slide__snapper__prev"></a>
                     <a href="#carousel__slide4" class="carousel__slide__snapper__next"></a>
                 </li>
             </ol>
         </section><!-- main__section-mv end here -->
 
-        <section class="main__section main__section-intro"> 
+        <section class="main__section main__section-intro">
             <h2 class="intro__message">
                 Hey guys! This is the <strong>Metrolics</strong> theme.<br>
                 It sports a responsive layout with a mobile layout.
@@ -101,77 +120,73 @@
             <p class="service__subHeading">
                 Ask us what we can do for you
             </p>
+
             <ul class="service__list displayFlex">
                 <li class="service__list__item">
+                    <!-- This icon will be made with css -->
                     <h4 class="service__list__item__heading service__list__item__heading-solutions">Web Solutions</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for fulfil their design needs. Whether you need to materials and a beautiful and functional refresh we are confident you will be pleased with the results.</p>
                 </li>
                 <li class="service__list__item">
+                    <!-- This icon will be made with css -->
                     <h4 class="service__list__item__heading service__list__item__heading-photo">Photography</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for fulfil their design needs. Whether you need to materials and a beautiful and functional refresh we are confident you will be pleased with the results.</p>
                 </li>
                 <li class="service__list__item">
+                    <!-- This icon will be made with css -->
                     <h4 class="service__list__item__heading service__list__item__heading-dev">Web Development</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
                 </li>
                 <li class="service__list__item">
+                    <!-- This icon will be made with css -->
                     <h4 class="service__list__item__heading service__list__item__heading-design">Web Design</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for fulfil their design needs. Whether you need to materials and a beautiful and functional refresh we are confident you will be pleased with the results.</p>
                 </li>
             </ul>
         </section><!-- main__section-service end here -->
 
         <section class="main__section main__section-blog">
             <h3 class="blog__heading">What's Up Lately?</h3>
-            <span>Read up on our latest work</span>
+            <p class="blog__subHeading">Read up on our latest work</p>
+
             <ul class="blog__list">
                 <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
+                    <a class="blog__list__item__link" href="">
+                        <img class="blog__list__item__link__img" src="./img/turntable@3x.jpg" alt="turntable">
                         <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
+                            <h4 class="item-date__heading">29</h4>
+                            <time class="item-date__date" datetime="2013-11">Nov. 2013</time>
                         </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <h4 class="blog__list__item__link__heading">Sample Image Post</h4>
+                        <p class="blog__list__item__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
+                    <a class="blog__list__item__link" href="">
+                        <img class="blog__list__item__link__img" src="./img/turntable@3x.jpg" alt="turntable">
                         <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
+                            <h4 class="item-date__heading">29</h4>
+                            <time class="item-date__date" datetime="2013-11">Nov. 2013</time>
                         </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <h4 class="blog__list__item__link__heading">Sample Image Post</h4>
+                        <p class="blog__list__item__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
+                    <a class="blog__list__item__link" href="">
+                        <img class="blog__list__item__link__img" src="./img/turntable@3x.jpg" alt="turntable">
                         <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
+                            <h4 class="item-date__heading">29</h4>
+                            <time class="item-date__date" datetime="2013-11">Nov. 2013</time>
                         </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <h4 class="blog__list__item__link__heading">Sample Image Post</h4>
+                        <p class="blog__list__item__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
             </ul>
@@ -180,48 +195,55 @@
 
         <section class="main__section main__section-latestProject">
             <h3 class="latestProject__heading">Our Latest Projects</h3>
-            <span class="latestProject__heading__content">Client happy? We are happy.</span>
+            <p class="latestProject__subHeading">Client happy? We are happy.</p>
+
             <ul class="latestProject__list">
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
                 <li class="latestProject__list__item">
                     <a class="latestProject__list__link" href="">
                         <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
                         <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
+                        <p class="latestProject__list__link__cap">Photography</p>
+                        <!-- This icon will be made with css -->
                     </a>
                 </li>
             </ul>
@@ -229,11 +251,12 @@
 
         <section class="main__section main__section-demo">
             <div class="demo__content">
-                <h3>Thingofabove</h3>
-                <p>Mics stuff we could not put anyplace else</p>
+                <h3 class="demo__content__heading">Thingofabove</h3>
+                <p class="demo__content__subHeading">Mics stuff we could not put anyplace else</p>
                 <div class="demo__content__container">
                     <img class="demo__content__img" src="./img/addordian_menu@3x.png" alt="accordian menu sample">
                 </div>
+
                 <ul class="demo__content__list">
                     <li class="demo__content__list__item">
                         <img class="demo__content__list__item__img" src="./img/company_logo/NetBeans@3x.png" alt="netbeans logo">
@@ -258,22 +281,19 @@
             <div class="footer__block-header">
                 <figure class="block-header__photo">
                     <img class="block-header__img" src="./img/footer/peewee@3x.png" alt="peewee's face">
+                    <figcaption class="block-header__content">
+                      <h5 class="block-header__content__heading">PeeWee Herman</h5>
+                      <p class="block-header__desc">Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
+                  </figcaption>
                 </figure>
-                <figcaption class="block-header__content">
-                    <h5 class="block-header__content__heading">PeeWee Herman</h5>
-                    <p class="block-header__desc">Peewee has over 10 years experience in the industry. He is our Creative Director, digital
-                        designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before
-                        starting the company Peewee worked as a designer and studio manager for a design house who
-                        boasted a number of big name clients.</p>
-                </figcaption>
+                <!-- we will make the blue border with css -->
             </div>
-            
+
             <div class="footer__block-content">
                 <div class="footer__block-content__box footer__block-content__box-about">
                     <h4 class="box-about__heading">About Us</h4>
-                    <p class="box-about__desc">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
-                        tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po
-                        kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah but</p>
+                    <!-- we will make the triangle decolation with ::after css -->
+                    <p class="box-about__desc">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah but</p>
                     <nav class="box-about__nav">
                         <a class="box-about__nav__item" href="">
                             <img class="box-about__nav__item__img" src="./img/footer/btn-facebook@3x.png" alt="facebook icon">
@@ -318,41 +338,44 @@
                 </div>
 
                 <div class="footer__block-content__box footer__block-content__box-treets">
-                    <h4 class="box-treets__heading">Recent Tweets</h4>
-                    <div class="box-treets__container">
-                        <figure class="box-treets__icon">
-                            <img class="box-treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
+                    <h4 class="treets__heading">Recent Tweets</h4>
+                    <div class="treets__container">
+                        <figure class="treets__icon">
+                            <img class="treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
                         </figure>
-                        <p class="box-treets__content">
-                            <a class="box-treets__content__img" href=""><span>@Minions</span>- ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka
-                                masala jiji wiiiii hahaha po kass </a>
+                        <p class="treets__content">
+                            <a class="treets__content__link" href="">
+                              @Minions
+                            </a>
+                            - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha
                         </p>
                     </div>
-                    <div class="box-treets__container">
-                        <figure class="box-treets__icon">
-                            <img class="box-treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
+
+                    <div class="treets__container">
+                        <figure class="treets__icon">
+                            <img class="treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
                         </figure>
-                        <p class="box-treets__content">
-                            <a class="box-treets__content__img" href=""><span>@Minions</span>- ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala
-                                jiji wiiiii hahaha </a>
+                        <p class="treets__content">
+                            <a class="treets__content__link" href="">
+                              @Minions
+                            </a>
+                            - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha
                         </p>
                     </div>
                 </div>
 
                 <div class="footer__block-content__box footer__block-content__box-newsLetter">
                     <h4 class="box-newsLetter__heading">Newsletter</h4>
-                    <p class="box-newsLetter__desc"> Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji
-                        wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee
-                        do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh </p>
+                    <p class="box-newsLetter__desc"> Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh </p>
                     <div class="box-newsLetter__email">
-                        <input class="box-newsLetter__email__input" id="input_email" name="email" type="email"
-                            placeholder="Enter your Email...">
+                        <input class="box-newsLetter__email__input" id="input_email" name="email" type="email" placeholder="Enter your Email...">
                         <button class="box-newsLetter__email__button" type="submit">
                             <i class="fa-solid fa-paper-plane"></i>
                         </button>
                     </div>
                 </div>
             </div>
+            <!-- We will make the colorful border at the bottom of footer with css -->
         </footer><!-- page__footer end here -->
 
         <script src="js/vendor/modernizr-3.11.2.min.js"></script>
