@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-
+    
+    <!-- <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     <script src="https://kit.fontawesome.com/4d5e3f95b7.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -35,7 +36,6 @@
             <span></span>
             <span></span>
         </div>
-
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__list__item">
@@ -60,10 +60,10 @@
                 </li>
             </ul>
         </nav>
-    </header><!-- page__header end here -->
+    </header><!-- header end here -->
 
     <main class="page__main">
-        <section class="main__section main__section-mv" aria-label="Gallery">
+        <section class="main__section main__mv" aria-label="Gallery">
             <ol class="mv__carousel">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide">
                     <div class="carousel__slide__snapper">
@@ -85,287 +85,196 @@
                     <a href="#carousel__slide4" class="carousel__slide__snapper__next"></a>
                 </li>
             </ol>
-        </section><!-- main__section-mv end here -->
+        </section><!-- Main Visual end here -->
 
-        <section class="main__section main__section-intro"> 
-            <h2 class="intro__message">
+        <section class="main__section main__about">
+            <h2 class="about__message">
                 Hey guys! This is the <strong>Metrolics</strong> theme.<br>
                 It sports a responsive layout with a mobile layout.
             </h2>
-        </section>
-
-        <section class="main__section main__section-service">
-            <h3 class="service__heading">
+            <h3 class="about__heading">
                 Things That We Do
             </h3>
-            <p class="service__subHeading">
+            <p class="about__subHeading">
                 Ask us what we can do for you
             </p>
-            <ul class="service__list displayFlex">
-                <li class="service__list__item">
-                    <h4 class="service__list__item__heading service__list__item__heading-solutions">Web Solutions</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+            <ul class="about__list displayFlex">
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-solutions">Web Solutions</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
                 </li>
-                <li class="service__list__item">
-                    <h4 class="service__list__item__heading service__list__item__heading-photo">Photography</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-photo">Photography</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
                 </li>
-                <li class="service__list__item">
-                    <h4 class="service__list__item__heading service__list__item__heading-dev">Web Development</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-dev">Web Development</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
                 </li>
-                <li class="service__list__item">
-                    <h4 class="service__list__item__heading service__list__item__heading-design">Web Design</h4>
-                    <p class="service__list__item__desc">We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs. Whether you need to
-                        create a brand from scratch, including marketing materials and a beautiful and functional
-                        website or whether you are looking for a design refresh we are confident you will be pleased
-                        with the results.</p>
+                <li class="about__list__item">
+                    <!-- <span class="item__icon"></span> -->
+                    <h4 class="about__list__item__heading about__list__item__heading-design">Web Design</h4>
+                    <p class="about__list__item__desc">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
                 </li>
             </ul>
-        </section><!-- main__section-service end here -->
-
-        <section class="main__section main__section-blog">
-            <h3 class="blog__heading">What's Up Lately?</h3>
-            <span>Read up on our latest work</span>
-            <ul class="blog__list">
-                <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
-                        <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
-                        </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
-                        <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
-                        </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="blog__list__item">
-                    <a href="">
-                        <img src="./img/turntable@3x.jpg" alt="turntable">
-                        <div class="blog__list__item-date">
-                            <h4 class="heading">29</h4>
-                            <span>Nov. 2013</span>
-                        </div>
-                        <h4 class="heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-            </ul>
-        </section><!-- main__section-blog end here -->
-
-
-        <section class="main__section main__section-latestProject">
-            <h3 class="latestProject__heading">Our Latest Projects</h3>
-            <span class="latestProject__heading__content">Client happy? We are happy.</span>
-            <ul class="latestProject__list">
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-                <li class="latestProject__list__item">
-                    <a class="latestProject__list__link" href="">
-                        <img class="latestProject__list__image" src="./img/turntable@3x.jpg" alt="turntable">
-                        <h4 class="latestProject__list__link__heading">Sample Image Post</h4>
-                        <span>Photography</span>
-                    </a>
-                </li>
-            </ul>
-        </section><!-- main__section-latestProject end here -->
-
-        <section class="main__section main__section-demo">
-            <div class="demo__content">
-                <h3>Thingofabove</h3>
-                <p>Mics stuff we could not put anyplace else</p>
-                <div class="demo__content__container">
-                    <img class="demo__content__img" src="./img/addordian_menu@3x.png" alt="accordian menu sample">
-                </div>
-                <ul class="demo__content__list">
-                    <li class="demo__content__list__item">
-                        <img class="demo__content__list__item__img" src="./img/company_logo/NetBeans@3x.png" alt="netbeans logo">
-                    </li>
-                    <li class="demo__content__list__item">
-                        <img class="demo__content__list__item__img" src="./img/company_logo/Krita@3x.png" alt="krita logo">
-                    </li>
-                    <li class="demo__content__list__item">
-                        <img class="demo__content__list__item__img" src="./img/company_logo/SCIRRA@3x.png" alt="scirra logo">
-                    </li>
-                    <li class="demo__content__list__item">
-                        <img class="demo__content__list__item__img" src="./img/company_logo/blender@3x.png" alt="blender logo">
-                    </li>
-                    <li class="demo__content__list__item">
-                        <img class="demo__content__list__item__img" src="./img/company_logo/INKSCAPE@3x.png" alt="inkscape logo">
-                    </li>
-                </ul>
             </div>
-        </section><!-- main__section-demo end here -->
+        </section><!-- header end here -->
 
-        <footer class="page__footer">
-            <div class="footer__block-header">
-                <figure class="block-header__photo">
-                    <img class="block-header__img" src="./img/footer/peewee@3x.png" alt="peewee's face">
-                </figure>
-                <figcaption class="block-header__content">
-                    <h5 class="block-header__content__heading">PeeWee Herman</h5>
-                    <p class="block-header__desc">Peewee has over 10 years experience in the industry. He is our Creative Director, digital
-                        designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before
-                        starting the company Peewee worked as a designer and studio manager for a design house who
-                        boasted a number of big name clients.</p>
-                </figcaption>
+        <section class="page__main__section">
+            <div class="">
+                content
             </div>
-            
-            <div class="footer__block-content">
-                <div class="footer__block-content__box footer__block-content__box-about">
-                    <h4 class="box-about__heading">About Us</h4>
-                    <p class="box-about__desc">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
-                        tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po
-                        kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah but</p>
-                    <nav class="box-about__nav">
-                        <a class="box-about__nav__item" href="">
-                            <img class="box-about__nav__item__img" src="./img/footer/btn-facebook@3x.png" alt="facebook icon">
-                        </a>
-                        <a class="box-about__nav__item" href="">
-                            <img class="box-about__nav__item__img" src="./img/footer/btn-google+@3x.png" alt="google+ icon">
-                        </a>
-                        <a class="box-about__nav__item" href="">
-                            <img class="box-about__nav__item__img" src="./img/footer/btn-twitter@3x.png" alt="twitter icon">
-                        </a>
-                        <a class="box-about__nav__item" href="">
-                            <img class="box-about__nav__item__img" src="./img/footer/btn-instagram@3x.png" alt="instagram icon">
-                        </a>
-                        <a class="box-about__nav__item" href="">
-                            <img class="box-about__nav__item__img" src="./img/footer/btn-rss@3x.png" alt="rss icon">
-                        </a>
-                    </nav>
-                </div>
+        </section>
+    </main>
 
-                <div class="footer__block-content__box footer__block-content__box-flickr">
-                    <h4 class="box-flickr__heading">Flickr Photos</h4>
-                    <ul class="box-flickr__list">
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion1@3x.png" alt="smiling minion">
-                        </li>
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion2@3x.png" alt="minion with red wig">
-                        </li>
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion3@3x.png" alt="minion with speaker">
-                        </li>
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion4@3x.png" alt="santaclaus minion">
-                        </li>
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion5@3x.png" alt="minion photo">
-                        </li>
-                        <li class="box-flickr__list__item">
-                            <img class="box-flickr__list__item__img" src="./img/footer/minion6@3x.png" alt="minion photo with banana">
-                        </li>
-                    </ul>
-                </div>
+    <section class="page__section">
+        <h3>Our Latest Projects</h3>
+        <p>Client happy? We are happy.</p>
+        <div class="column">
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+            <figure class="content__img">
+                <img src="" alt="">
+            </figure>
+        </div>
+    </section>
 
-                <div class="footer__block-content__box footer__block-content__box-treets">
-                    <h4 class="box-treets__heading">Recent Tweets</h4>
-                    <div class="box-treets__container">
-                        <figure class="box-treets__icon">
-                            <img class="box-treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
-                        </figure>
-                        <p class="box-treets__content">
-                            <a class="box-treets__content__img" href=""><span>@Minions</span>- ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka
-                                masala jiji wiiiii hahaha po kass </a>
-                        </p>
-                    </div>
-                    <div class="box-treets__container">
-                        <figure class="box-treets__icon">
-                            <img class="box-treets__icon__img" src="./img/footer/icon-tweet@3x.png" alt="grey tweeter icon">
-                        </figure>
-                        <p class="box-treets__content">
-                            <a class="box-treets__content__img" href=""><span>@Minions</span>- ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala
-                                jiji wiiiii hahaha </a>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="footer__block-content__box footer__block-content__box-newsLetter">
-                    <h4 class="box-newsLetter__heading">Newsletter</h4>
-                    <p class="box-newsLetter__desc"> Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji
-                        wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee
-                        do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh </p>
-                    <div class="box-newsLetter__email">
-                        <input class="box-newsLetter__email__input" id="input_email" name="email" type="email"
-                            placeholder="Enter your Email...">
-                        <button class="box-newsLetter__email__button" type="submit">
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </div>
+    <section class="page__section">
+        <div class="page__section-content">
+            <h3>Thingofabove</h3>
+            <p>Mics stuff we could not put anyplace else</p>
+            <div class="content__row">
+                <picture>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </picture>
+            </div>
+            <div class="content__row">
+                <picture>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="page__footer">
+        <div class="page__footer-item">
+            <figure class="footer__item-image">
+                <img src="" alt="">
+            </figure>
+            <div class="footer__item-content">
+                <h5>PeeWee Herman</h5>
+                <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer,
+                    web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the
+                    company Peewee worked as a designer and studio manager for a design house who boasted a number of
+                    big name clients.</p>
+            </div>
+        </div>
+        <div class="page__footer-item">
+            <div class="footer__item-col">
+                <h4 class="heading">About Us</h4>
+                <img src="" alt="">
+                <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
+                    tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass
+                    wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah but</p>
+                <nav>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </nav>
+            </div>
+            <div class="footer__item-col">
+                <h4 class="heading">Flickr Photos</h4>
+                <img src="" alt="">
+                <picture>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </picture>
+            </div>
+            <div class="footer__item-col">
+                <h4 class="heading">Recent Tweets</h4>
+                <img src="" alt="">
+                <div>
+                    <figure class="footer__item-col-icon">
+                        <img src="" alt="">
+                    </figure>
+                    <p>
+                        <a href=""><span>@Minions</span>- ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala
+                            jiji wiiiii hahaha po kass </a>
+                    </p>
+                </div>
+                <div>
+                    <figure class="footer__item-col-icon">
+                        <img src="" alt="">
+                    </figure>
+                    <p>
+                        <a href=""><span>@Minions</span>- ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji
+                            wiiiii hahaha </a>
+                    </p>
                 </div>
             </div>
-        </footer><!-- page__footer end here -->
+            <div class="footer__item-col">
+                <h4 class="heading">Newsletter</h4>
+                <img src="" alt="">
+                <p> Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
+                    tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass
+                    wiiiii butt chasy. Pepete uuuhhh </p>
+                <div>
+                    <input class="footer__item-input" id="input_email" name="email" type="email"
+                        placeholder="Enter your Email...">
+                    <button class="footer__item-button" type="submit">
+                        <a href=""></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="page__footer-item">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
 
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async></script>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
