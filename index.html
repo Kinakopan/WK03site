@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="page ho me">
+<body class="page home">
     <header class="page__header">
         <a class="header__title" href="/">
             <h1 class="section__heading">Metrolics</h1>
@@ -76,38 +76,34 @@
     </header><!-- page__header end here -->
 
     <main class="page__main">
-        <section class="main__section main__section-mv pcOnly" aria-label="Gallery">
-            <ol class="mv__carousel">
-                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__slide__snapper">
-                        <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
-                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
-                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
-                        <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
-                        <a href="#carousel__slide4" class="carousel__slide__snapper__prev"></a>
-                        <a href="#carousel__slide2" class="carousel__slide__snapper__next"></a>
-                    </div>
-                </li>
-                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__slide__snapper"></div>
-                    <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
-                    <a href="#carousel__slide1" class="carousel__slide__snapper__prev"></a>
-                    <a href="#carousel__slide3" class="carousel__slide__snapper__next"></a>
-                </li>
-                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__slide__snapper"></div>
-                    <img class="carousel__slide__snapper__img" src="./img/mv@3x.jpg" alt="main visual">
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-metro">Metro Style</p>
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-retina">Retina Ready</p>
-                    <p class="carousel__slide__snapper_message carousel__slide__snapper_message-responsive">Responsive Design</p>
-                    <a href="#carousel__slide2" class="carousel__slide__snapper__prev"></a>
-                    <a href="#carousel__slide4" class="carousel__slide__snapper__next"></a>
-                </li>
-            </ol>
-        </section><!-- main__section-mv end here -->
+      <div class="hero-area pcOnly" aria-label="Gallery">
+          <div class="slider">
+            <ul class="slider__slides">
+                  <li class="slide">
+                      <a href="#" class="slide__link">
+                          <img src="banner-img.jpg" alt="slider alt" class="slide__img">
+                          <ul class="slide__info">
+                              <li class="slide__info__item">Metro Style</li>
+                              <li class="slide__info__item">Retina Ready</li>
+                              <li class="slide__info__item">Responsive Design</li>
+                          </ul>>
+                      </a>
+                  </li>
+                  <!-- slide -->
+                  <li class="slide">
+                      <a href="#" class="slide__link">
+                          <img src="banner-img.jpg" alt="slider alt" class="slide__img">
+                          <ul class="slide__info">
+                              <li class="slide__info__item">Metro Style</li>
+                              <li class="slide__info__item">Retina Ready</li>
+                              <li class="slide__info__item">Responsive Design</li>
+                          </ul>>
+                      </a>
+                  </li>
+                  <!-- slide -->
+              </ul>
+          </div>
+        </div><!-- hero-area end here -->
 
         <section class="main__section main__section-intro">
             <h2 class="intro__message">
