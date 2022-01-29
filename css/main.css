@@ -16,7 +16,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -26,21 +26,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -49,13 +49,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -64,65 +64,65 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+
   body {
     width: 100%;
     scrollbar-color: transparent transparent; /* thumb and track color */
     scrollbar-width: 0px;
     font-family: "unbuntu", "sans-serif";
   }
-  
+
   h1, h2, h3, h4, h5 {
     font-weight: 100;
   }
-  
+
   a {
     display: block;
   }
-  
+
   a,
   img {
     width: 100%;
   }
-  
+
   .displayFlex {
     display: flex;
   }
-  
+
   .main__section {
     margin: 0 auto;
     text-align: center;
   }
-  
+
   /* page__header */
   .header__title {
     width: 185px;
   }
-  
-  
-  
+
+
+
   /* header__nav */
   .nav__list__item__link {
     position: relative;
@@ -130,7 +130,7 @@
     text-align: left;
     background: green;
   }
-  
+
   .nav__list__item__link::before {
     position: absolute;
     top: 0;
@@ -141,9 +141,9 @@
     font-size: 100px;
     font-family: "Font Awesome 5 Free";
   }
-  
-  
-  
+
+
+
   /* header__hamburger */
   .header__hamburger {
     display : block;
@@ -176,7 +176,7 @@
   .header__hamburger span:nth-child(3) {
     top: 30px;
   }
-  
+
   /* when the menu is open */
   .header__hamburger.active span:nth-child(1) {
     top : 16px;
@@ -186,7 +186,7 @@
     -moz-transform   : rotate(315deg);
     transform        : rotate(315deg);
   }
-  
+
   .header__hamburger.active span:nth-child(2),
   .header__hamburger.active span:nth-child(3) {
     top: 16px;
@@ -195,7 +195,7 @@
     -moz-transform   : rotate(-315deg);
     transform        : rotate(-315deg);
   }
-  
+
   header__nav.header_nav {
     position: fixed;
     z-index : 2;
@@ -207,13 +207,13 @@
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
   }
-  
+
   header__nav.nav__list {
     margin: 0 auto;
     padding: 0;
     width: 100%;
   }
-  
+
   header__nav.nav__list__item {
     list-style-type: none;
     padding: 0;
@@ -226,22 +226,22 @@
   /* header__nav.nav__list__item:hover{
     background :#ddd;
   } */
-  
+
   header__nav.nav__list__item a {
     display: block;
     padding: 1em 0;
     text-decoration :none;
   }
-  
+
   header__nav.header_nav.active {
     opacity: 100;
-  
+
   }
-  
-  
-  
-  
-  /* Carousel */
+
+
+
+
+  /* Slides */
   @keyframes tonext {
     75% {
       left: 0;
@@ -256,7 +256,7 @@
       left: 0;
     }
   }
-  
+
   @keyframes tostart {
     75% {
       left: 0;
@@ -271,7 +271,7 @@
       left: 0;
     }
   }
-  
+
   @keyframes snap {
     96% {
       scroll-snap-align: center;
@@ -286,38 +286,38 @@
       scroll-snap-align: center;
     }
   }
-  
+
   *::-webkit-scrollbar {
     width: 0;
   }
-  
+
   *::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   *::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
   }
-  
+
   * {
     -ms-overflow-style: none;
   }
-  
+
   ol, li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
+
   .main__mv {
     position: relative;
     padding-top: 26.3%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
   }
-  
-  .mv__carousel {
+
+  .slider__slides {
     position: absolute;
     top: 0;
     right: 0;
@@ -328,14 +328,14 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
-  
-  .carousel__slide {
+
+  .slide {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
   }
-  
-  .carousel__slide__snapper {
+
+  .slide__link {
     position: absolute;
     top: 0;
     left: 0;
@@ -343,35 +343,35 @@
     height: 100%;
     scroll-snap-align: center;
   }
-  
+
   @media (hover: hover) {
-    .carousel__slide__snapper {
+    .slide__link {
       animation-name: tonext, snap;
       animation-timing-function: ease;
       animation-duration: 4s;
       animation-iteration-count: infinite;
     }
-  
-    .carousel__slide:last-child .carousel__slide__snapper {
+
+    .slide:last-child .slide__link {
       animation-name: tostart, snap;
     }
   }
-  
+
   @media (prefers-reduced-motion: reduce) {
-    .carousel__slide__snapper {
+    .slide__link {
       animation-name: none;
     }
   }
-  
-  .carousel:hover .carousel__slide__snapper,
-  .carousel:focus-within .carousel__slide__snapper {
+
+  /* .carousel:hover .slide__link,
+  .carousel:focus-within .slide__link {
     animation-name: none;
-  }
-  
+  } */
+
   .main__mv::before,
   .main__mv::after,
-  .carousel__slide__snapper__prev,
-  .carousel__slide__snapper__next {
+  .slide__link__prev,
+  .slide__link__next {
     position: absolute;
     top: 50%;
     width: 2rem;
@@ -381,17 +381,17 @@
     border-radius: 50%;
     outline: 0;
   }
-  
+
   .main__mv::before,
-  .carousel__slide__snapper__prev {
-    left: 3rem;  
+  .slide__link__prev {
+    left: 3rem;
   }
-  
+
   .main__mv::after,
-  .carousel__slide__snapper__next {
+  .slide__link__next {
     right: 3rem;
   }
-  
+
   .main__mv::before,
   .main__mv::after {
     z-index: 1;
@@ -403,41 +403,41 @@
     border: 3px solid #fff;
     margin: -7px 3px;
   }
-  
+
   .main__mv::before {
     content: "\f104";
   }
-  
+
   .main__mv::after {
     content: "\f105";
   }
-  
+
   /* main__mv */
   .main__mv {
     max-width: ;
     width: 62%;
   }
-  
-  
-  
-  
+
+
+
+
   /* main__section-intro */
-  
+
   .intro__message strong {
     font-weight: 100;
     color: cornflowerblue;
   }
-  
+
   .service__list__item {
     display: inline-block;
   }
-  
+
   .service__list__item__heading {
     font-weight: bold;
     position: relative;
     padding-top: 6rem;
   }
-  
+
   .service__list__item__heading::before {
     position: absolute;
     top: 0;
@@ -450,45 +450,45 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
   .service__list__item__heading-solutions::before {
     border: 3px solid yellow;
     color: yellow;
     background-image: url("../img/icons/lightbulb.png");
   }
-  
+
   .service__list__item__heading-photo::before {
     border: 3px solid green;
     color: green;
     background-image: url("../img/icons/picture.png");
   }
-  
-  
+
+
   .service__list__item__heading-dev::before {
     border: 3px solid pink;
     color: pink;
     background-image: url("../img/icons/gear.png");
   }
-  
+
   .service__list__item__heading-design::before {
     border: 3px solid blue;
     color: blue;
     background-image: url("../img/icons/pen.png");
   }
-  
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden,
   [hidden] {
     display: none !important;
   }
-  
+
   /*
    * Hide only visually, but have it available for screen readers:
    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -497,7 +497,7 @@
    *    causes content to wrap 1 word per line:
    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -510,13 +510,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
    * Extends the .sr-only class to allow the element
    * to be focusable when navigated to via the keyboard:
    * https://www.drupal.org/node/897638
    */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -527,15 +527,15 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
    * Hide visually and from screen readers, but maintain layout
    */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
+
   /*
    * Clearfix: contain floats
    *
@@ -547,40 +547,40 @@
    * 2. The use of `table` rather than `block` is only necessary if using
    *    `:before` to contain the top-margins of child elements.
    */
-  
+
   .clearfix::before,
   .clearfix::after {
     content: " ";
     display: table;
   }
-  
+
   .clearfix::after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  
+
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
     (min-resolution: 1.25dppx),
     (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *::before,
@@ -591,20 +591,20 @@
       box-shadow: none !important;
       text-shadow: none !important;
     }
-  
+
     a,
     a:visited {
       text-decoration: underline;
     }
-  
+
     a[href]::after {
       content: " (" attr(href) ")";
     }
-  
+
     abbr[title]::after {
       content: " (" attr(title) ")";
     }
-  
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -613,17 +613,17 @@
     a[href^="javascript:"]::after {
       content: "";
     }
-  
+
     pre {
       white-space: pre-wrap !important;
     }
-  
+
     pre,
     blockquote {
       border: 1px solid #999;
       page-break-inside: avoid;
     }
-  
+
     /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -631,23 +631,21 @@
     thead {
       display: table-header-group;
     }
-  
+
     tr,
     img {
       page-break-inside: avoid;
     }
-  
+
     p,
     h2,
     h3 {
       orphans: 3;
       widows: 3;
     }
-  
+
     h2,
     h3 {
       page-break-after: avoid;
     }
   }
-  
-  
