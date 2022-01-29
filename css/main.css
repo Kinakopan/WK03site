@@ -476,6 +476,94 @@
     background-image: url("../img/icons/pen.png");
   }
 
+ /* ==========================================================================
+     Author's custom styles 2
+     ========================================================================== */
+     .section__heading {
+       font-weight: 100;
+       font-size: 2rem;
+       color: rgb(73, 73, 73);
+       margin-bottom: 0;
+       margin-top: 3rem;
+     }
+
+     .heading__desc {
+      color: rgb(163, 163, 163);
+      margin-bottom: 2rem;
+    }
+
+     .blog__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      }
+  
+    .blog__list__item {
+      display: block;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .blog__list__item-date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #d8605f;
+      color: white;
+      padding: 0px 20px;
+    }
+
+    .blog__list__decs {
+      position: absolute;
+      bottom: 0;
+      background: #19b2de;
+      color: white;
+      width: 100%;
+    }
+
+/* <our latest projects> section  */
+  .latestProject__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .latestProject__list__item {
+    display: inline-block;
+    width: calc(90% / 3);
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .latestProject__list__desc {
+    position: absolute;
+    background: #29aed6;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    color: white;
+  
+  }
+
+  .latestProject__list__link {
+    position: relative;
+  }
+
+  .latestProject__list__desc > h4, 
+  .latestProject__list__desc > p {
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+    height: auto;
+  }
+  
+  .latestProject__list__desc > h4 {
+    margin-bottom: 3rem;
+  }
+  
+
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
