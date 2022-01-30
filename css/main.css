@@ -561,8 +561,19 @@
   .latestProject__list__desc > h4 {
     margin-bottom: 3rem;
   }
-  
+  /* main__section-demo */
 
+  .demo__content__list {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .demo__content__list__item {
+    padding: 1rem;
+  }
+
+  
 
   /* ==========================================================================
      Helper classes
