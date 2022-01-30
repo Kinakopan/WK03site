@@ -17,6 +17,7 @@
     line-height: 1.4;
   }
 
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -87,6 +88,41 @@
      Author's custom styles
      ========================================================================== */
 
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
+
+@media screen and (max-width: 39.9375em) {
+  .show-for-large {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 40em) {
+  .show-for-small-only {
+    display: none;
+  }
+}
+
+
+
   body {
     width: 100%;
     scrollbar-color: transparent transparent; /* thumb and track color */
@@ -94,21 +130,19 @@
     font-family: "unbuntu", "sans-serif";
   }
 
-  h1, h2, h3, h4, h5 {
-    font-weight: 100;
-  }
-
-  a {
-    display: block;
-  }
-
-  a,
-  img {
-    width: 100%;
-  }
-
   .displayFlex {
     display: flex;
+
+  }
+
+
+  .page__header {
+    height: 115px;
+    align-items: center;
+  }
+
+  .header__heading {
+    display: none;
   }
 
   .main__section {
@@ -124,11 +158,45 @@
 
 
   /* header__nav */
-  .nav__list__item__link {
+  .header__nav {
+    width: 680px;
+  }
+
+  .nav__list {
+    width: 100%;
+  }
+
+  .nav__list__item {
     position: relative;
-    color: #fff;
     text-align: left;
-    background: green;
+    width: 136px;
+    height: 115px;
+    padding: 0 0 17px 17px;
+  }
+
+  .nav__list__item:first-child {
+    background: #25c389;
+  }
+
+  .nav__list__item:nth-child(2) {
+    background: #ffb901;
+  }
+
+  .nav__list__item:nth-child(3) {
+    background: #de6262;
+  }
+
+  .nav__list__item:nth-child(4) {
+      background: #1691bd;
+  }
+
+  .nav__list__item:last-child {
+      background: #166ba2;
+  }
+
+  .nav__list__item__link {
+    color: #fff;
+    font-size: 9px;
   }
 
   .nav__list__item__link::before {
@@ -136,11 +204,43 @@
     top: 0;
     left: 50%;
     margin-left: -50px;
-    content: "\f015";
     color: #fff;
-    font-size: 100px;
-    font-family: "Font Awesome 5 Free";
+    font-size: 20PX;
+    font-family: FontAwesome;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
   }
+
+  .nav__list__item:first-child .nav__list__item__link::before {
+    content: "\f015";
+    background: #56caa3;
+  }
+
+  .nav__list__item:nth-child(2) .nav__list__item__link::before {
+    content: "\f015";
+    background: #ffc634;
+  }
+
+  .nav__list__item:nth-child(3) .nav__list__item__link::before {
+    content: "\f015";
+    background: #e78383;
+  }
+
+  .nav__list__item:nth-child(4) .nav__list__item__link::before {
+    content: "\f015";
+    background: #42a9cc;
+  }
+
+  .nav__list__item:last-child .nav__list__item__link::before {
+    content: "\f015";
+    background: #4589b8;
+  }
+
+
+
 
 
 
@@ -242,175 +342,89 @@
 
 
   /* Slides */
-  @keyframes tonext {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
+  /*==================================================
+  スライダーのためのcss
+  ===================================*/
+  .slider__slides {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+      margin:0 auto;
   }
 
-  @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
+  .slider__slides .slider__slides__item,
+  .slider__slides .slides__item__link,
+  .slider__slides .slides__item__link__img,
+  .slider__slides .slides__item__link__list {
+      width:100%;/*スライダー内の画像を横幅100%に*/
+      height:auto;
   }
 
-  @keyframes snap {
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
+  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+  .slider__slides .slick-slide {
+      margin:0 10px;
   }
 
-  *::-webkit-scrollbar {
-    width: 0;
+  /*矢印の設定*/
+
+  /*戻る、次へ矢印の位置*/
+  .slick-prev,
+  .slick-next {
+      position: absolute;/*絶対配置にする*/
+      top: 42%;
+      cursor: pointer;/*マウスカーソルを指マークに*/
+      outline: none;/*クリックをしたら出てくる枠線を消す*/
+      border-top: 2px solid #666;/*矢印の色*/
+      border-right: 2px solid #666;/*矢印の色*/
+      height: 15px;
+      width: 15px;
   }
 
-  *::-webkit-scrollbar-track {
-    background: transparent;
+  .slick-prev {/*戻る矢印の位置と形状*/
+      left: -1.5%;
+      transform: rotate(-135deg);
   }
 
-  *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
+  .slick-next {/*次へ矢印の位置と形状*/
+      right: -1.5%;
+      transform: rotate(45deg);
   }
 
-  * {
-    -ms-overflow-style: none;
+  /*========= レイアウトのためのCSS ===============*/
+
+  body{
+    background:#eee;
   }
 
-  ol, li {
-    list-style: none;
-    margin: 0;
+  h2,p {
+      text-align:center;
+      padding:20px;
+  }
+
+  ul{
+    margin:0;
     padding: 0;
+    list-style: none;
   }
 
-  .main__mv {
-    position: relative;
-    padding-top: 26.3%;
-    filter: drop-shadow(0 0 10px #0003);
-    perspective: 100px;
+  a{
+    color: #333;
   }
 
-  .slider__slides {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+  a:hover,
+  a:active{
+    text-decoration: none;
   }
 
-  .slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
-  .slide__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-  }
-
-  @media (hover: hover) {
-    .slide__link {
-      animation-name: tonext, snap;
-      animation-timing-function: ease;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
-
-    .slide:last-child .slide__link {
-      animation-name: tostart, snap;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .slide__link {
-      animation-name: none;
-    }
-  }
-
-  /* .carousel:hover .slide__link,
-  .carousel:focus-within .slide__link {
-    animation-name: none;
-  } */
-
-  .main__mv::before,
-  .main__mv::after,
-  .slide__link__prev,
-  .slide__link__next {
-    position: absolute;
-    top: 50%;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    outline: 0;
-  }
-
-  .main__mv::before,
-  .slide__link__prev {
-    left: 3rem;
-  }
-
-  .main__mv::after,
-  .slide__link__next {
-    right: 3rem;
-  }
-
-  .main__mv::before,
-  .main__mv::after {
-    z-index: 1;
-    pointer-events: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    border: 3px solid #fff;
-    margin: -7px 3px;
-  }
-
+/*
   .main__mv::before {
     content: "\f104";
   }
 
   .main__mv::after {
     content: "\f105";
-  }
+  } */
+
+
 
   /* main__mv */
   .main__mv {
