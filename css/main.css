@@ -557,6 +557,7 @@
     height: 100%;
     opacity: 0.9;
     color: white;
+    display: none;
   
   }
 
@@ -604,7 +605,27 @@
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
+    border-bottom: 2px solid rgb(86, 86, 86);
+    position: relative;
   }
+
+  .block-header__photo::after {
+    content:"";
+    background-color: #29aed6;
+    width: 12%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+  }
+
+.box__heading {
+  width: 100%;
+  height: 2rem;
+  border-bottom: 2px solid white;
+}
+
 
   .block-header__img {
     grid-column: 1 / span 1;
