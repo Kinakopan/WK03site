@@ -89,40 +89,6 @@
      ========================================================================== */
 
 
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
-
-
-
-@media screen and (max-width: 39.9375em) {
-  .show-for-large {
-    display: none;
-  }
-}
-
-
-@media screen and (min-width: 40em) {
-  .show-for-small-only {
-    display: none;
-  }
-}
-
-
-
   body {
     width: 100%;
     scrollbar-color: transparent transparent; /* thumb and track color */
@@ -137,8 +103,8 @@
 
 
   .page__header {
-    height: 115px;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
   }
 
   .header__heading {
@@ -153,6 +119,7 @@
   /* page__header */
   .header__title {
     width: 185px;
+    margin-right: 90px;
   }
 
 
@@ -171,7 +138,6 @@
     text-align: left;
     width: 136px;
     height: 115px;
-    padding: 0 0 17px 17px;
   }
 
   .nav__list__item:first-child {
@@ -197,13 +163,13 @@
   .nav__list__item__link {
     color: #fff;
     font-size: 9px;
+    height: 100%;
   }
 
   .nav__list__item__link::before {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    margin-left: -50px;
     color: #fff;
     font-size: 20PX;
     font-family: FontAwesome;
@@ -212,6 +178,7 @@
     border-radius: 50%;
     text-align: center;
     line-height: 38px;
+    transform: translate(-50%, -50%);
   }
 
   .nav__list__item:first-child .nav__list__item__link::before {
@@ -239,8 +206,11 @@
     background: #4589b8;
   }
 
-
-
+.nav__list__item__link > span {
+  position: absolute;
+  left: 17px;
+  bottom: 17px;
+}
 
 
 
@@ -255,14 +225,15 @@
     height: 42px;
     cursor: pointer;
     text-align: center;
+    background: #4092b5;
   }
   .header__hamburger span {
     display : block;
     position: absolute;
-    width   : 30px;
-    height  : 2px ;
-    left    : 6px;
-    background : #555;
+    width: 27px;
+    height: 4px;
+    left: 8px;
+    background : #fff;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition   : 0.5s ease-in-out;
     transition        : 0.5s ease-in-out;
@@ -279,8 +250,8 @@
 
   /* when the menu is open */
   .header__hamburger.active span:nth-child(1) {
-    top : 16px;
-    left: 6px;
+    top : 19px;
+    left: 8px;
     /* background : #fff; */
     -webkit-transform: rotate(315deg);
     -moz-transform   : rotate(315deg);
@@ -289,7 +260,7 @@
 
   .header__hamburger.active span:nth-child(2),
   .header__hamburger.active span:nth-child(3) {
-    top: 16px;
+    top: 19px;
     /* background : #fff; */
     -webkit-transform: rotate(-315deg);
     -moz-transform   : rotate(-315deg);
@@ -338,101 +309,18 @@
 
   }
 
-
-
-
-  /* Slides */
-  /*==================================================
-  スライダーのためのcss
-  ===================================*/
-  .slider__slides {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-      margin:0 auto;
-  }
-
-  .slider__slides .slider__slides__item,
-  .slider__slides .slides__item__link,
-  .slider__slides .slides__item__link__img,
-  .slider__slides .slides__item__link__list {
-      width:100%;/*スライダー内の画像を横幅100%に*/
-      height:auto;
-  }
-
-  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-  .slider__slides .slick-slide {
-      margin:0 10px;
-  }
-
-  /*矢印の設定*/
-
-  /*戻る、次へ矢印の位置*/
-  .slick-prev,
-  .slick-next {
-      position: absolute;/*絶対配置にする*/
-      top: 42%;
-      cursor: pointer;/*マウスカーソルを指マークに*/
-      outline: none;/*クリックをしたら出てくる枠線を消す*/
-      border-top: 2px solid #666;/*矢印の色*/
-      border-right: 2px solid #666;/*矢印の色*/
-      height: 15px;
-      width: 15px;
-  }
-
-  .slick-prev {/*戻る矢印の位置と形状*/
-      left: -1.5%;
-      transform: rotate(-135deg);
-  }
-
-  .slick-next {/*次へ矢印の位置と形状*/
-      right: -1.5%;
-      transform: rotate(45deg);
-  }
-
-  /*========= レイアウトのためのCSS ===============*/
-
-  body{
-    background:#eee;
-  }
-
-  h2,p {
-      text-align:center;
-      padding:20px;
-  }
-
-  ul{
-    margin:0;
-    padding: 0;
-    list-style: none;
-  }
-
-  a{
-    color: #333;
-  }
-
   a:hover,
   a:active{
     text-decoration: none;
   }
 
-/*
-  .main__mv::before {
-    content: "\f104";
-  }
-
-  .main__mv::after {
-    content: "\f105";
-  } */
-
-
-
   /* main__mv */
-  .main__mv {
-    max-width: ;
-    width: 62%;
+  .hero-area {
+    /* max-width:  900px; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
-
-
 
 
   /* main__section-intro */
@@ -442,8 +330,13 @@
     color: cornflowerblue;
   }
 
+  .service__list {
+    flex-wrap: wrap;
+  }
+
   .service__list__item {
     display: inline-block;
+    width: 50%;
   }
 
   .service__list__item__heading {
@@ -466,29 +359,101 @@
   }
 
   .service__list__item__heading-solutions::before {
-    border: 3px solid yellow;
-    color: yellow;
+    border: 3px solid #feb902;
     background-image: url("../img/icons/lightbulb.png");
   }
 
   .service__list__item__heading-photo::before {
-    border: 3px solid green;
+    border: 3px solid #25c389;
     color: green;
     background-image: url("../img/icons/picture.png");
   }
 
 
   .service__list__item__heading-dev::before {
-    border: 3px solid pink;
+    border: 3px solid #e7615e;
     color: pink;
     background-image: url("../img/icons/gear.png");
   }
 
   .service__list__item__heading-design::before {
-    border: 3px solid blue;
+    border: 3px solid #1fa8d4;
     color: blue;
     background-image: url("../img/icons/pen.png");
   }
+
+
+/* Small only */
+@media screen and (max-width: 700px) {
+  .main__section {
+    max-width: 400px;
+  }
+  .show-for-large {
+    display: none;
+  }
+  .service__list__item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .service__list__item__heading {
+    padding: 0 0 0 20px;
+  }
+  .service__list__item__heading,
+  .service__list__item__desc {
+    text-align: left;
+  }
+  .service__list__item__heading::before {
+    top: 0;
+    left: -40px;
+  }
+  .service__list__item__desc {
+    padding-top: 5px;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 701px) {
+  .page__header {
+    height: 100px;
+  }
+  .show-for-small-only {
+    display: none;
+  }
+  .hero-area img,
+  .main__section,
+  .footer__body {
+    max-width: 400px;
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .hero-area img,
+  .main__section,
+  .footer__body {
+    max-width: 860px;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 12001px) {
+  .page__header {
+    height: 115px;
+  }
+  .hero-area img,
+  .main__section,
+  .footer__body {
+    max-width: 1200px;
+  }  
+}
+
+
+
+
+
 
  /* ==========================================================================
      Author's custom styles 2
