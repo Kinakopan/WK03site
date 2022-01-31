@@ -587,7 +587,107 @@
     padding: 1rem;
   }
 
+  /* page__footer */
+
+  .page__footer {
+    background-color: rgb(22, 36, 47);
+    color: white;
+  }
+
+  .footer__block {
+    display: flex;
+    flex:1;
+  }
+
+  .block-header__photo {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .block-header__img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span2;
+  }
+
+  .block-header__desc {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 3;
+  }
+
+  .footer__block-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   
+  .footer__block-content__box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+
+.box-about__nav > a {
+  width: auto;
+  display: inline;
+}
+.box-about__nav > a > img {
+  width: auto;
+  display: inline;
+}
+
+.box-flickr__list__item > img{
+   display: inline;
+   width: auto;
+   margin: 5px;
+ }
+
+.footer__block-content__box-flickr > ul {
+  display: inherit;
+  padding: 0;
+}
+
+
+.treets__icon {
+  float: left;
+}
+
+.treets__content__link {
+  color: #19b2de;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ .treets__icon__img{
+   width:auto;
+ }
+
+ .box-newsLetter__email {
+   width: 100%;
+ }
+
+ .box-newsLetter__email__input {
+   background-color: rgb(222, 98, 98);
+   margin: 0;
+   padding: 1rem;
+   width: 70%;
+   border-style: none;
+ }
+
+ ::placeholder {
+  color:white;
+}
+
+.box-newsLetter__email__button {
+  background-color: rgb(255, 185, 1);
+  padding: 1em;
+  width: 20%;
+  border-style: none;
+}
+
+
+
 
   /* ==========================================================================
      Helper classes
