@@ -445,6 +445,7 @@
   }
 
 
+
   .header__title {
     width: 185px;
     margin-bottom: 10px;
@@ -534,8 +535,10 @@
   }
   
   .latestProject__list__desc > h4 {
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
   }
+
+
   /* main__section-demo */
 
   .demo__content__list {
@@ -548,7 +551,7 @@
   }
 
   .demo__content__list__item {
-    padding: 5px;
+    padding: 5px; 
   }
 
   /* page__footer */
