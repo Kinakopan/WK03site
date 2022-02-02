@@ -936,6 +936,31 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* main part */
+
+   main ul[class$="list"] {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  li[class$="list__item"] {
+   display: block;
+   width: 100%;
+  }
+  .demo__content {
+   display: none;
+  }
+
+  div[class$="box-flickr"] {
+  display: none;
+  }
+
+  div[class$="box-newsLetter"] {
+  display: none;
+  }
+
 }
 
 /* Medium and up */
@@ -981,12 +1006,52 @@
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  /* .hero-area img,
+  .main__section,
+  .footer__body {
+    max-width: 860px;
+    margin: 0 auto;
+  } */
+  
   .service__list {
     flex-wrap: wrap;
   }
   .footer__block:not(.footer__block-header) {
     width: 48%;
   }
+
+  /* main part */
+  .blog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    
+  }
+
+  .blog__list__item:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+
+  .blog__list__item:first-child::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top:0;
+    right:-100%;
+    background-color: #29aed6;
+    height: 100%;
+  } 
+
+  .blog__list__item__link {
+    margin: 0;
+  }
+
+ 
 }
 
 /* Large and up */
