@@ -885,6 +885,7 @@
   }
   .blog__list__item-date {
     padding: 0.4em;
+    font-weight: lighter;
   }
 
   .item-date__heading {
@@ -897,20 +898,30 @@
    margin: 0;
   }
 
-  .heading__desc {
-    margin-top: 0;
+  h4 {
+    color: white;
   }
 
   h4[class*="list__heading"]{
     text-align: left;
     margin-bottom: 0;
     margin-left: 1em;
+    margin-top: 0.5em;
     font-weight: bold;
+    color: white;
   }
+
   p[class$="item__link__cap"]{
     text-align: left;
     margin-top: 0;
     margin-left: 1em;
+    margin-bottom: 0.5em;
+    color: white;
+  }
+
+  .latestProject__list__link__cap {
+    color: white;
+    margin-bottom: 0.5em;
   }
 
   .latestProject__list__desc {
