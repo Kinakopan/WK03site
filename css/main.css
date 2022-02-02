@@ -282,11 +282,9 @@
     top: 30px;
   }
 
-  /* when the menu is open */
   .header__hamburger.active span:nth-child(1) {
     top : 19px;
     left: 8px;
-    /* background : #fff; */
     -webkit-transform: rotate(315deg);
     -moz-transform   : rotate(315deg);
     transform        : rotate(315deg);
@@ -295,13 +293,12 @@
   .header__hamburger.active span:nth-child(2),
   .header__hamburger.active span:nth-child(3) {
     top: 19px;
-    /* background : #fff; */
     -webkit-transform: rotate(-315deg);
     -moz-transform   : rotate(-315deg);
     transform        : rotate(-315deg);
   }
 
-  .header__nav.header_nav {
+  nav.header_nav {
     position: fixed;
     z-index : 2;
     top  : 0;
@@ -313,29 +310,29 @@
     transition: opacity .6s ease, visibility .6s ease;
   }
 
-  .header__nav.nav__list {
+  nav.header__nav .nav__list {
     margin: 0 auto;
     padding: 0;
     width: 100%;
   }
 
-  .header__nav.nav__list__item {
+  nav.header__nav .nav__list__item {
     list-style-type: none;
     padding: 0;
     width: 100%;
     transition: .4s all;
   }
-  .header__nav.nav__list__item:last-child {
+  .header__nav .nav__list__item:last-child {
     padding-bottom: 0;
   }
 
-  .header__nav.nav__list__item a {
+  .nav__list__item a {
     display: block;
     padding: 1em 0;
     text-decoration :none;
   }
 
-  .header__nav.header_nav.active {
+  nav.header_nav.active {
     opacity: 100;
 
   }
