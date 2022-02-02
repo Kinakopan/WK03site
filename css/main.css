@@ -98,8 +98,17 @@
     font-family: "unbuntu", "sans-serif";
   }
 
+  html, body, div, ul, li, p, a, figure, img {
+    margin: 0;
+    padding: 0;
+  } 
+
   a, p, span, li, div, h1, h2, h3, h4, h5 {
     color: #3c3c3c;
+  }
+
+  img {
+    width: 100%;
   }
 
   li {
@@ -566,14 +575,14 @@
   .page__footer h4,
   .page__footer h5 {
     color: #fff;
+    font-size: 10px;
   }
 
   .page__footer {
     background-color: rgb(22, 36, 47);
     position: relative;
-    padding: 30px 0;
+    padding: 30px 30px 0;
   }
- 
  
   .footer__block__header {
     display: flex;
@@ -606,10 +615,15 @@
   .footer__block-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer__block {
-    width: 50%;
+    display: inline-block;
+  }
+
+  .footer__block + .footer__block {
+    margin-left: 10px;
   }
 
   .header__content__desc {
@@ -666,68 +680,93 @@
   
   .block-header__img > img {
     width: 100%;
-    height: auto;
   }
 
-.box-about__nav > a {
-  width: auto;
-  display: inline;
-}
-.box-about__nav > a > img {
-  width: auto;
-  display: inline;
-}
+  .box-about__nav {
+    display: flex;
+    gap: 3px;
+  }
 
-.box-flickr__list__item > img{
-   display: inline;
-   width: auto;
-   margin: 5px;
- }
+  .box-about__nav > a {
 
-.treets__icon {
-  float: left;
-}
+  }
+  .ox-about__nav__item__img {
+    width: 100%;
+  }
 
-.treets__content__link {
-  color: #19b2de;
-  text-decoration: none;
-  font-weight: bold;
-}
+  .box-flickr__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
- .treets__icon__img{
-   width:auto;
- }
+  .box-flickr__list__item {
+    width: calc(calc(100% - 20px) / 3);
+  }
 
- .box-newsLetter__email {
-   width: 100%;
- }
+  .box-flickr__list__item__img {
+    width: 100%;
+  }
 
- .box-newsLetter__email__input {
-   background-color: rgb(222, 98, 98);
-   margin: 0;
-   padding: 1rem;
-   width: 70%;
-   border-style: none;
- }
+  .treets__container {
+    display: flex;
+  }
 
- ::placeholder {
-  color:white;
-}
+  .treets__container + .treets__container {
+    margin-top: 20px;
+  }
 
-.box-newsLetter__email__button {
-  background-color: rgb(255, 185, 1);
-  padding: 1em;
-  width: 20%;
-  border-style: none;
-}
+  .treets__icon {
+    width: 35px;
+  }
 
-.fa-paper-plane {
-  content: "\f1d8";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  color: #fff;
-}
+  .treets__content {
+    padding-left: 10px;
+  }
+  a.treets__content__link {
+    color: #19b2de;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .treets__icon__img{
+    width: 100%;
+    display: flex;
+  }
+
+  .box-newsLetter__email {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .box-newsLetter__email__input {
+    background-color: #de6262;
+    width: calc(100% - 30px);
+    height: 30px;
+    margin: 0;
+    border: none;
+    padding: 0 20px;
+  }
+
+  ::placeholder {
+    color:white;
+  }
+
+  .box-newsLetter__email__button {
+    background-color: #ffb901;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0;
+  }
+
+  .fa-paper-plane {
+    content: "\f1d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+  }
 
 
 
@@ -754,6 +793,7 @@
     max-width: 400px;
     margin: 0 auto;
   }
+  .how-for-mid-only,
   .show-for-large {
     display: none;
   }
@@ -825,6 +865,9 @@
   .service__list {
     flex-wrap: wrap;
   }
+  .footer__block {
+    width: 50%;
+  }
 }
 
 /* Large and up */
@@ -832,6 +875,10 @@
   /* page__header */
   .header__title {
     /* margin-right: 90px; */
+  }
+  .how-for-small-only,
+  .how-for-mid-only {
+
   }
   .page__header {
     height: 115px;
@@ -841,9 +888,30 @@
   .footer__body {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
   } 
+  .footer__body {
+    position: relative;
+    padding-bottom: 120px;
+  }
+  .footer__body::after {
+    content: "";
+    display: block;
+    background: pink;
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
   .hero-area {
     height: 355px;
+  }
+  .footer__block:not(.footer__block-header) {
+    width: calc(calc(100% - 270px) / 4);
+  }
+  .footer__block + .footer__block {
+    margin-left: 30px;
   }
 }
 
