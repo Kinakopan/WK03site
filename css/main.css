@@ -103,7 +103,7 @@
     width: 100%;
     scrollbar-color: transparent transparent; /* thumb and track color */
     scrollbar-width: 0px;
-    font-family: "unbuntu", "sans-serif";
+    font-family: 'Ubuntu', sans-serif;
   }
 
   html, body, div, ul, li, p, a, figure, img {
@@ -358,12 +358,24 @@
   .slide__link::before,
   .slide__link::after {
     display: block;
-    content: "\f054";
-    width: 10px;
-    height: 10px;
-    right: 10%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 2px solid #fff;
     border-radius: 50%;
+    font-size: 12px;
+    z-index: 1;
+  }
+  .slide__link::before {
+    margin-left: -43%;
+    content: "\f053";
+  }
+  .slide__link::after {
+    margin-left: 43%;
+    content: "\f054";
   }
 
   .slide__link {
@@ -374,9 +386,8 @@
     list-style: none;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-left: -65px;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
   }
@@ -621,6 +632,10 @@
     margin-top: 0;
   }
 
+  .block-header__content__desc {
+    font-style: italic;
+  }
+
   .footer__block-content {
     display: flex;
     flex-wrap: wrap;
@@ -752,6 +767,7 @@
   .box-newsLetter__email__input,
   .box-newsLetter__email__button {
     font-size: 10px;
+    cursor: pointer;
   }
 
   .box-newsLetter__email__input {
@@ -945,7 +961,8 @@
     width: 63%;
   }
   .slide__link {
-    width: 80%;
+    display: inline-block;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -999,6 +1016,14 @@
   .page__header {
     height: 115px;
   }
+  .slide__link::before,
+  .slide__link::after {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
   .slide__img,
   .main__section,
   .footer__body {
