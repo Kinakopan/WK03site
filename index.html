@@ -16,7 +16,13 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <!-- We wanted to omit writing codes like "margin:0;" and this was recommended so we wanted to try it out
+    reference: https://csstools.github.io/sanitize.css/ -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/forms.css">
+
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://kit.fontawesome.com/4d5e3f95b7.js" crossorigin="anonymous"></script>
@@ -299,22 +305,22 @@
                 </ul>
             </div>
         </section><!-- main__section-demo end here -->
-    
+
     </main>
 
         <footer class="page__footer">
             <div class="footer__body">
                 <div class="footer__block footer__block-header">
                     <figure class="block-header__photo">
-                        <div class="block-header__img">
-                            <img src="./img/footer/peewee.jpg" alt="peewee's face">
+                        <div class="block-header__imgBox">
+                            <img class="block-header__imgBox__img" src="./img/footer/peewee.jpg" alt="peewee's face">
                         </div>
                         <figcaption class="block-header__content">
                             <h5 class="block-header__content__heading">PeeWee Herman</h5>
                             <p class="block-header__content__desc">Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
-                        </figcaption> 
+                        </figcaption>
                     </figure>
-                
+
                     <!-- we will make the blue border with css -->
                 </div>
 
