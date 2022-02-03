@@ -17,7 +17,7 @@
     line-height: 2;
   }
 
-
+ 
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -337,8 +337,7 @@
   }
 
   nav.header_nav.active {
-    opacity: 100;
-
+    opacity: 1;
   }
 
   a:hover,
@@ -427,11 +426,7 @@
     font-weight: 100;
     color: cornflowerblue;
   }
-  .service__heading {
-    margin-bottom: 0;
-    font-weight: 400;
-
-  }
+ 
   .service__list {
     gap: 2%;
   }
