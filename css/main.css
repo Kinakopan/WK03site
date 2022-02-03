@@ -87,7 +87,11 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  * {
+    html {
+      font-size: 62.5%;
+    }
+  
+     * {
     box-sizing: border-box;
   }
 
@@ -103,7 +107,7 @@
     width: 100%;
     scrollbar-color: transparent transparent; /* thumb and track color */
     scrollbar-width: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', "sans-serif";
   }
 
   html, body, div, ul, li, p, a, figure, img {
@@ -131,7 +135,7 @@
 
   .page__header {
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .header__heading {
@@ -1016,7 +1020,7 @@
     padding: 0 30px;
   }
   .page__header {
-    height: 100px;
+    height: 115px;
   }
   .show-for-small-only {
     display: none;
@@ -1155,9 +1159,6 @@
   .how-for-small-only,
   .how-for-mid-only {
 
-  }
-  .page__header {
-    height: 115px;
   }
   .slide__link::before,
   .slide__link::after {
