@@ -568,6 +568,10 @@
     padding-bottom: 2rem;
   }
 
+  .latestProject__list__link:hover .latestProject__list__desc {
+    display: block;
+  }
+
 
   /* main__section-demo */
 
@@ -1192,9 +1196,6 @@
     color: white;
   }
 
-  .latestProject__list__desc {
-    display: block;
-  }
 
   .list__heading {
     color: white;
