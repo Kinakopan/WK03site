@@ -429,6 +429,8 @@
   }
   .service__heading {
     margin-bottom: 0;
+    font-weight: 400;
+
   }
   .service__list {
     gap: 2%;
@@ -495,7 +497,6 @@
   .section__heading {
     font-size: 2rem;
     margin-bottom: 0;
-    margin-top: 3rem;
     font-weight: 400;
   }
 
@@ -516,17 +517,43 @@
     position: relative;
   }
 
+  .item-date__heading {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.5em;
+    font-size: 1.2em;
+  }
+
   .blog__list__item-date {
     position: absolute;
     top: 0;
     left: 0;
     background: #d8605f;
     color: white;
-    padding: rem 2rem;
+    padding: 0 0.5rem; 
+  }
+
+  h4[class^="list__heading"]{
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+    margin-top: 0.5em;
+    font-weight: 500;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  p[class$="item__link__cap"]{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5em;
+    color: white;
+    font-size: 1.2em;
   }
 
   .latestProject__list__item__img {
-  
     height: fit-content;
   }
 
@@ -549,7 +576,7 @@
     display: inline-block;
     width: calc(calc(100% - 6rem)/ 3);
     position: relative;
-    padding-top: 2rem;
+    margin-top: 1em;
   }
 
   .latestProject__list__desc {
@@ -572,12 +599,21 @@
   .latestProject__list__desc > p {
     position: absolute;
     bottom: 0;
-    margin-left: 1rem;
     height: auto;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5em;
+    color: white;
+    font-size: 1.2em;
   }
 
   .latestProject__list__desc > h4 {
     padding-bottom: 2rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-weight: 500;
+    font-size: 1.5em;
   }
 
   .latestProject__list__link:hover .latestProject__list__desc {
@@ -590,10 +626,11 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
+  font-size: large;
   background-color: rgb(21, 150, 189);
   width: fit-content;
   height: fit-content;
-  padding: 0.5em 1em;
+  padding: 0em 0.5em;
   position: absolute;
   right: 1em;
   top: 90%;
@@ -607,10 +644,11 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-style: normal;
+    font-size: large;
     background-color: rgb(21, 150, 189);
     width: fit-content;
     height: fit-content;
-    padding: 0.5em;
+    padding: 0 0.5em;
     position: absolute;
     right: 1em;
     top: 50%;
@@ -622,7 +660,7 @@
   .demo__content__list {
     display: flex;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .demo__content__list__item {
@@ -937,46 +975,6 @@
   .service__list__item__desc {
     padding-top: .5rem;
   }
-  .blog__list__item-date {
-    padding: 0.4em;
-    font-weight: lighter;
-  }
-
-  .item-date__heading {
-    margin: 0;
-    font-weight: bold;
-  }
-
-  h3 {
-   font-size: 2em;
-   margin: 0;
-  }
-
-  h4 {
-    color: white;
-  }
-
-  h4[class*="list__heading"]{
-    text-align: left;
-    margin-bottom: 0;
-    margin-left: 1em;
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: white;
-  }
-
-  p[class$="item__link__cap"]{
-    text-align: left;
-    margin-top: 0;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    color: white;
-  }
-
-  .latestProject__list__link__cap {
-    color: white;
-    margin-bottom: 0.5em;
-  }
 
   .latestProject__list__desc {
     display: block;
@@ -1017,7 +1015,7 @@
 
   /* main part */
 
-   main ul[class$="list"] {
+  main ul[class$="list"] {
     display: block;
     padding: 0;
     margin: 0;
@@ -1025,8 +1023,9 @@
 
   li[class$="list__item"] {
    display: block;
-   width: 100%;
+   width: 90%;
   }
+
   .demo__content {
    display: none;
   }
@@ -1131,52 +1130,12 @@
   .blog__list__item__link {
     margin: 0;
   }
-
-  h3 {
-    font-size: 2em;
-    margin: 0;
-   }
-
-
-   .heading__desc {
-     margin-top: 0;
-   }
-
-   .blog__list__item-date {
-    padding: 0.4em;
-    font-size: smaller;
-  }
-
-  .item-date__heading {
-    margin: 0;
-    font-weight: bold;
-  }
-  .item-date__heading {
-    color: white;
-  }
  
-  h4[class*="list__heading"]{
-    text-align: left;
-    margin-bottom: 0;
-    margin-left: 1em;
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: white;
-  }
-  p[class$="item__link__cap"]{
-    text-align: left;
-    margin-top: 0;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    color: white;
-    font-weight: lighter;
-  }
   .blog__list__item:first-child .blog__list__decs {
     position: absolute;
     left: 100%;
     z-index: 1;
   }
-
 
   .latestProject__list {
     display: flex;
@@ -1186,19 +1145,12 @@
 
  .latestProject__list__item {
    width: calc(calc(100% - 2rem) / 2);
-   padding-top: 0.5em;
   } 
 
-  .latestProject__list__desc {
+  .latestProject__list__link:hover.latestProject__list__desc {
     display: block;
   }
   
-  .latestProject__list__link__cap {
-    color: white;
-    margin-bottom: 0.5em;
-
-  }
-
 }
 
 /* Large and up */
@@ -1235,15 +1187,6 @@
     gap: 2rem;
   }
 
-  .blog__list__item-date {
-    padding: .5rem;
-  }
-
-  .item-date__heading {
-    margin: .5rem;
-    color: white;
-  }
-
   .list__heading {
     color: white;
     text-align: left;
@@ -1252,18 +1195,9 @@
     margin-top: 0;
   }
 
-  p[class$="link__cap"] {
-    color: white;
-    text-align: left;
-    padding-bottom: 0.5rem;
-    margin-left: 1rem;
-  }
-
   h3 {
     font-size: 2em;
   }
-
-
 }
 
 
